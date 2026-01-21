@@ -84,7 +84,7 @@ def getLocation(ip):
         lon = data["lon"]
         return lat, lon
     except:
-        print(f"Skipping {ip}, Found Error : f{data}")
+        print(f"Skipping {ip}. Because of timeout, private range ips, or other error.")
         return None, None
 
 geoPaths = {}
